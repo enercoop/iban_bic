@@ -23,7 +23,7 @@ jobs:
       RUBY_YJIT_ENABLE: "1"
     strategy:
       matrix:
-        ruby-version: ['2.6', '2.7', '3.0']
+        ruby-version: ['3.2', '3.3', '3.4', '4.0']
 
     steps:
     - uses: actions/checkout@v4
