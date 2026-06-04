@@ -38,7 +38,7 @@ CZ:
   parts: (?<iban_check>\d{2}) (?<bank>\d{4})         (?<branch>\d{6})         (?<account>\d{10})
   tags: sepa
 DE:
-  parts: (?<iban_check>\d{2}) (?<bank>\d{8})         (?<branch>\d{10})
+  parts: (?<iban_check>\d{2}) (?<bank>\d{8})         (?<account>\d{10})
   tags: sepa
 DK:
   parts: (?<iban_check>\d{2}) (?<bank>\d{4})         (?<branch>\d{10})

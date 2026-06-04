@@ -155,6 +155,12 @@ RSpec.describe(::IbanBic) do
 
       it { is_expected.to include(country: "MD", iban_check: "24", bank: "AG", account: "000225100013104168") }
     end
+
+    context "when iban country is Germany" do
+      let(:iban) { "DE89370400440532013000" }
+
+      it { is_expected.to include(country: "DE", iban_check: "89", bank: "37040044", account: "0532013000") }
+    end
   end
 
   describe "#valid?" do
