@@ -73,6 +73,8 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     base64 (0.3.0)
+    benchmark (0.5.0)
+    bigdecimal (4.1.2)
     builder (3.2.4)
     byebug (11.1.3)
     codecov (0.5.2)
@@ -86,6 +88,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.4.4)
     docile (1.4.0)
+    drb (2.2.3)
     equalizer (0.0.11)
     erubi (1.10.0)
     generator_spec (0.9.4)
@@ -112,6 +115,7 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.0)
     minitest (5.15.0)
+    mutex_m (0.3.0)
     net-imap (0.4.24)
       date
       net-protocol
@@ -125,6 +129,7 @@ GEM
     nokogiri (1.13.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    ostruct (0.6.3)
     parallel (1.20.1)
     parser (3.0.1.1)
       ast (~> 2.4.1)
@@ -225,10 +230,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  benchmark
+  bigdecimal
   byebug
   codecov (~> 0.1)
+  drb
   generator_spec (~> 0.9.3)
   iban_bic!
+  mutex_m
+  ostruct
   rspec-rails (~> 5.0)
   rubocop (~> 0.63.0)
   sqlite3 (~> 1.4.2)

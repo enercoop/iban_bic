@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.0.1"
+ruby "3.4.7"
 
 gem "iban_bic", path: "../.."
 gem "sqlite3"
@@ -10,4 +10,10 @@ gem "rspec-core"
 
 group :development, :test do
   gem "byebug", platform: :mri
+
+  gem "benchmark"
+  gem "bigdecimal"
+  gem "drb"
+  gem "mutex_m"
+  gem "ostruct"
 end

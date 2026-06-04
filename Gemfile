@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
+ruby file: ".ruby-version"
 
 # Declare your gem's dependencies in iban_bic.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -12,5 +13,12 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-# To use a debugger
-gem "byebug", group: [:development, :test]
+group :development, :test do
+  gem "byebug", platform: :mri
+
+  gem "benchmark"
+  gem "bigdecimal"
+  gem "drb"
+  gem "mutex_m"
+  gem "ostruct"
+end
